@@ -519,6 +519,10 @@ void TiltCorrect(RECT rct, double radian)
 				else
 				{
 					lbutton = false;
+					if (!isFullWindow)
+					{
+						bRedrawAll = true;
+					}
 				}
 			}
 		}
